@@ -1,0 +1,34 @@
+:root {
+    --text_color-header : #202124;
+    --text_color-body : #5f6368;
+}
+
+.preference__section {
+    margin-top: 3em;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.preference__header {
+    color : var(--text_color-header);
+    font-weight : 400;
+    font-size: 1.7rem;
+    word-break: auto;
+    word-wrap: auto;
+    text-align: left;
+}
+
+.preference__body {
+    color : var(--text_color-body);
+    margin-block: 10px 20px;
+    text-align: left;
+}
+
+.info_pref {
+    margin-inline : 0 auto;
+}
+
+.passwordSec {
+    margin-top: 0;
+}
+

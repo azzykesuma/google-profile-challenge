@@ -1,0 +1,8 @@
+.sub_nav {
+    background-color: #fff;
+}
+
+.sub_nav__list {
+    font-family: 'Source Sans Pro',sans-serif;
+    font-weight: 600 !important;
+}

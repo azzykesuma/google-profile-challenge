@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+.text_header_info {
+    font-size: 1.7em;
+    margin-block: 10px;
+    font-weight: 400;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text_info {
+    color : var(--defaultColor);
+    margin-block : 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* main layout */
+.main_wrapper {
+    display: grid;
+    grid-template-columns: 300px 900px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.sub__wrapper {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap : 5em;
 }
 
-.App-link {
-  color: #61dafb;
+/* footer sec */
+
+footer {
+    background-color: white;
+    padding : 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.desktopFooter {
+    position: fixed;
+    bottom: 0;
+}
+
+.footer_nav ul {
+    display: flex;
+    gap : 10px;
+}
+
+.footerList a {
+    padding : 0;
+    font-size: .8em;
+}
+
+.footer_nav ul li a {
+    color : var(--defaultColor);
+}
+
+
+.footer_nav ul li a:hover {
+    text-decoration: underline;
 }

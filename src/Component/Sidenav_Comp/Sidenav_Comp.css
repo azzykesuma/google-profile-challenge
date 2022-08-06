@@ -1,0 +1,39 @@
+aside {
+    position: sticky;
+    top : 6em;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap : 5px;
+    border-radius: 0 40px 40px 0;
+}
+
+li:hover {
+    background-color: rgba(0,0,0,.04)
+}
+
+li a {
+    display: flex;
+    padding : 10px 20px;
+    align-items: center;
+    gap : 20px;
+    color : var(--defaultColor);
+
+}
+
+.icons {
+    color : var(--defaultColor);
+    margin-top: 3px;
+}
+
+.selected {
+    background-color: var(--selectedBcg);
+}
+
+.selected .icons,
+.selected a
+{
+    color : var(--selectedText);
+}

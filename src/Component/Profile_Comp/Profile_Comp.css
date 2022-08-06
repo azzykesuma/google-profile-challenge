@@ -1,0 +1,122 @@
+:root {
+    --text_color-header : #202124;
+    --text_color-body : #5f6368;
+}
+
+.profile_section {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.profile__header {
+    color : var(--text_color-header);
+    font-weight : 400;
+    font-size: 1.7rem;
+    word-break: auto;
+    word-wrap: auto;
+    text-align: left;
+}
+
+.profile__body {
+    color : var(--text_color-body);
+    margin-block: 10px 20px;
+    text-align: left;
+    max-width: 60ch;
+}
+
+/* ---------------CARD SECTIONS---------------- */
+.card__wrapper {
+    border-radius: 5px;
+    border :  1px solid #dadce0;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__header{
+    color : var(--text_color-header);
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding : 10px;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.card__body {
+    color : var(--text_color-body);
+    margin-bottom: 10px;
+    padding : 10px;
+    text-align: left;
+}
+
+.card__body a {
+    text-decoration: none;
+}
+
+.card__section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-top: auto;
+    padding : 10px;
+}
+
+.card__section div {
+    text-align: left;
+}
+
+.card__section:hover {
+    background-color: #fafafa;
+}
+
+.card__img {
+    padding: 30px;
+}
+
+.card__img:hover {
+    background-color: #fafafa;
+}
+
+.info {
+    margin-inline: auto;
+    color : var(--infocol) !important;
+}
+
+
+.card__profile {
+    background-color: var(--text_color-body);
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 10px;
+    height : 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__section div p {
+    color : var(--text_color-body);
+    font-size: 1rem;
+    max-width: 35ch;
+    margin-block : 5px;
+}
+
+.card__profileAccount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profile_account {
+    height : 60px;
+    width: 60px;
+}
+
+.card__innerwrapper {
+    display: flex;
+    align-items: center;
+    gap : 20px;
+    width : 100%;
+}

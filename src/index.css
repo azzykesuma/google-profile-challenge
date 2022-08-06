@@ -1,13 +1,51 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;800&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,300&display=swap');
+
+:root {
+  --defaultColor : #5f6368;
+  --formBcg : #f1f3f4;
+  --selectedBcg : #e8f0fe;
+  --selectedText : #1967d2;
+  --infocol : #202124;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  padding : 0;
+  margin : 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro',sans-serif;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* layout */
+
+.mobileLayout {
+  display : flex;
+  flex-direction: column;
+  gap : 20px;
+}
+
+.tabletLayout {
+  width : 100%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+
+.desktopLayout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap : 20px;
 }
