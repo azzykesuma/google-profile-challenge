@@ -1,6 +1,7 @@
 aside {
     position: sticky;
     top : 6em;
+    margin-right: 2em;
 }
 
 li {

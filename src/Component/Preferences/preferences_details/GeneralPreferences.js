@@ -6,9 +6,10 @@ import KeyboardIcon from '@mui/icons-material/Keyboard';
 import LanguageIcon from '@mui/icons-material/Language';
 import AccessibilityIcon from '@mui/icons-material/Accessibility';
 // mui
-import { Divider  } from '@mui/material'
+import { Divider, useMediaQuery  } from '@mui/material'
 
 function GeneralPreferences() {
+    const isDesktop = useMediaQuery('(min-width:700px)');
   return (
     <div className='card__wrapper'>
         <p className='card__header'>General preferences for the web</p>
@@ -18,7 +19,7 @@ function GeneralPreferences() {
         <div className="card__section">
             <div className="card__innerwrapper">
                 <div><LanguageIcon sx={{ color : '#5f6368' }}/></div>
-                <div className='tabletLayout'>
+                <div className = {isDesktop ? 'tabletLayout' : null}>
                     <p className='info info_pref'>Language </p>
                     <p className='info'>English (United States)</p>
                 </div>
@@ -31,7 +32,7 @@ function GeneralPreferences() {
         <div className="card__section">
             <div className="card__innerwrapper">
                 <div><KeyboardIcon sx={{ color : '#5f6368' }}/></div>
-                <div className='tabletLayout'>
+                <div className = {isDesktop ? 'tabletLayout' : null}>
                     <p className='info info_pref'>Input Tools</p>
                     <p className='info'>Type more easily in your language</p>
                 </div>
@@ -44,7 +45,7 @@ function GeneralPreferences() {
         <div className="card__section">
             <div className="card__innerwrapper">
                 <div><AccessibilityIcon sx={{ color : '#5f6368' }}/></div>
-                <div className='tabletLayout'>
+                <div className = {isDesktop ? 'tabletLayout' : null}>
                     <p className='info info_pref'>Accessibility</p>
                     <p className='info'>High contrast colors OFF</p>
                 </div>

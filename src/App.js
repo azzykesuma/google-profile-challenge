@@ -30,6 +30,7 @@ function App() {
                 textAlign: 'center',
                 backgroundColor : '#fff',
                 marginBottom : '5px',
+                padding : 'unset'
               }}
             >
               {/* checking desktop query to hide/show sidenav */}
