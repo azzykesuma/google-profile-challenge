@@ -7,15 +7,17 @@ import AppsIcon from '@mui/icons-material/Apps';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 // mui component
-import { IconButton, useMediaQuery, TextField   } from '@mui/material';
+import { IconButton, useMediaQuery  } from '@mui/material';
 
-function Header_Comp() {
+function HeaderComp() {
     const isTablet = useMediaQuery('(min-width:600px)');
     const isDesktop = useMediaQuery('(min-width:1000px)');
   return (
     <nav className='main_nav'>
         <div className="logo_wrapper">
-            <img className='logo' src='/asset/google_logo.png' />
+            <img className='logo' 
+            src='/asset/google_logo.png'
+            alt='google_logo' />
             <p>Account</p>
         </div>
         {/* rendering forms and removing searchbar if tablet viewport detected */}
@@ -51,4 +53,4 @@ function Header_Comp() {
   )
 }
 
-export default Header_Comp;
+export default HeaderComp;

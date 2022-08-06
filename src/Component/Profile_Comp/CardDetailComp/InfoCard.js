@@ -1,4 +1,3 @@
-import { Typography } from '@mui/material'
 import React from 'react'
 // icons
 import PersonIcon from '@mui/icons-material/Person';
@@ -13,7 +12,7 @@ function InfoCard() {
     <div className='card__wrapper'>
         <p className='card__header'>Basic Info</p>
         <p className='card__body'>
-            Some info may be visible to other people using Google services. <a href="#">Learn more</a> 
+            Some info may be visible to other people using Google services. <a href="/">Learn more</a> 
         </p>
         <div className="card__section">
             <div className={isTablet ? 'tabletLayout' : null}>

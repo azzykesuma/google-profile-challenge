@@ -29,7 +29,7 @@ function ProfileCard() {
         <Divider />
         <div className="card__section">
             <div>
-                <a href='#'>See Profiles</a>
+                <a href='/'>See Profiles</a>
             </div>
         </div>
     </div>

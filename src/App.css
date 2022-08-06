@@ -42,16 +42,11 @@ footer {
     gap : 10px;
 }
 
-.footerList a {
-    padding : 0;
-    font-size: .8em;
-}
-
-.footer_nav ul li a {
+.footerList {
     color : var(--defaultColor);
+    cursor : pointer;
 }
 
-
-.footer_nav ul li a:hover {
+.footerList:hover {
     text-decoration: underline;
 }

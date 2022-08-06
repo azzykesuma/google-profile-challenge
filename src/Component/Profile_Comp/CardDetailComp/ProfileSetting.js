@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Divider } from '@mui/material';
+import { Box } from '@mui/material';
 
 function ProfileSetting() {
   return (
@@ -20,7 +20,7 @@ function ProfileSetting() {
         </Box>
         <div className="card__section">
             <div>
-                <a href='#'>Go to about me</a>
+                <a href='/'>Go to about me</a>
             </div>
         </div>
     </div>

@@ -1,12 +1,12 @@
 import { Box } from '@mui/material';
 import './App.css'
 // components
-import Header_Comp from './Component/Header_Comp/Header_Comp';
-import Subnav_Comp from './Component/Subnav_Comp/Subnav_Comp';
-import Sidenav_Comp from './Component/Sidenav_Comp/Sidenav_Comp'
+import HeaderComp from './Component/Header_Comp/Header_Comp';
+import SubnavComp from './Component/Subnav_Comp/Subnav_Comp';
+import SidenavComp from './Component/Sidenav_Comp/Sidenav_Comp'
 
 import { useMediaQuery } from '@mui/material'
-import Profile_Comp from './Component/Profile_Comp/Profile_Comp';
+import ProfileComp from './Component/Profile_Comp/Profile_Comp';
 import Preferences from './Component/Preferences/Preferences';
 import Footer from './Component/Footer';
 
@@ -15,14 +15,14 @@ function App() {
 
   return (
     <div className="App">
-      <Header_Comp />
-      {isDesktop ? null : (<Subnav_Comp />)}
+      <HeaderComp />
+      {isDesktop ? null : (<SubnavComp />)}
       
       {/* toggling layout between desktop to mobile */}
         {isDesktop ? (
           <Box className='main_wrapper'>
             <Box className='sub__wrapper'>
-              <Sidenav_Comp />
+              <SidenavComp />
               <Footer />
             </Box>
             <Box
@@ -45,7 +45,7 @@ function App() {
                     Info about you and your preferences across Google services
                   </p>
                 )}
-                <Profile_Comp />
+                <ProfileComp />
                 <Preferences />
             </Box>
           </Box>
@@ -71,7 +71,7 @@ function App() {
               Info about you and your preferences across Google services
             </p>
           )}
-          <Profile_Comp />
+          <ProfileComp />
           <Preferences />
           <Footer />
         </Box>

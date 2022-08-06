@@ -11,7 +11,7 @@ import ProfileSetting from './CardDetailComp/ProfileSetting';
 import { useMediaQuery } from '@mui/material'
 
 
-function Profile_Comp() {
+function ProfileComp() {
     const isDesktop = useMediaQuery('(min-width:700px)');
   return (
     <section className='profile_section'>
@@ -53,4 +53,4 @@ function Profile_Comp() {
   )
 }
 
-export default Profile_Comp
+export default ProfileComp

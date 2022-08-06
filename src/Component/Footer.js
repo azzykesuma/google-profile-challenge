@@ -9,10 +9,10 @@ function Footer() {
         <div className="footer_nav">
             <nav>
                 <ul>
-                    <li className='footerList'><a href="#">Privacy</a></li>
-                    <li className='footerList'><a href="#">Terms</a></li>
-                    <li className='footerList'><a href="#">Help</a></li>
-                    <li className='footerList'><a href="#">About</a></li>
+                    <li className='footerList'>Privacy</li>
+                    <li className='footerList'>Terms</li>
+                    <li className='footerList'>Help</li>
+                    <li className='footerList'>About</li>
                 </ul>
             </nav>
         </div>
